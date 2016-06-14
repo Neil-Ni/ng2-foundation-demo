@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { ButtonsSectionComponent } from './components/buttons-section';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <div></div>
-  `,
+  directives: [ButtonsSectionComponent],
+  templateUrl: 'app/app.component.html'
 })
 export class AppComponent {}

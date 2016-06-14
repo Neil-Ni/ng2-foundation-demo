@@ -16,6 +16,7 @@
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.0/foundation.css" rel="stylesheet">
   <script src="node_modules/ng2-foundation/bundles/ng2-foundation.js"></script>
+  <link rel="stylesheet" href="assets/demo.css"/>
   <!-- 2. Configure SystemJS -->
   <script>
     System.config({
@@ -32,9 +33,7 @@
         "@angular/compiler": "node_modules/@angular/compiler/compiler.umd.js",
         "@angular/platform-browser": "node_modules/@angular/platform-browser/platform-browser.umd.js",
         "@angular/platform-browser-dynamic": "node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js",
-        // ng2-bootstrap specifics
-        "@angular/core/src/facade/lang": "node_modules/@angular/core/src/facade/lang.js",
-//        "@angular/platform-browser/src/animate/animation_builder": "node_modules/@angular/platform-browser/src/animate/animation_builder.js"
+        "@angular/platform-browser/src/animate/animation_builder": "node_modules/@angular/platform-browser/src/animate/animation_builder.js"
       }
     });
     System.import('app/boot')
