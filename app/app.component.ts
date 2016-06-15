@@ -4,6 +4,7 @@ import { ButtonsDemoComponent }     from './components/buttons/buttons-demo';
 import { PaginationDemoComponent }  from './components/pagination/pagination-demo';
 import { ProgressbarDemoComponent } from './components/progressbar/progressbar-demo';
 import { RatingDemoComponent }      from './components/rating/rating-demo';
+import { TabsDemoComponent }        from './components/tabs/tabs-demo';
 import { SectionComponent }         from './components/section/section.component';
 
 @Component({
@@ -11,10 +12,11 @@ import { SectionComponent }         from './components/section/section.component
   directives: [
     AlertDemoComponent,
     ButtonsDemoComponent,
-    SectionComponent,
     PaginationDemoComponent,
     ProgressbarDemoComponent,
-    RatingDemoComponent
+    RatingDemoComponent,
+    TabsDemoComponent,
+    SectionComponent
   ],
   templateUrl: 'app/app.component.html'
 })
