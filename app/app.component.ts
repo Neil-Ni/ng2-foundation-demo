@@ -3,6 +3,7 @@ import { AlertDemoComponent }       from './components/alert/alert-demo';
 import { ButtonsDemoComponent }     from './components/buttons/buttons-demo';
 import { PaginationDemoComponent }  from './components/pagination/pagination-demo';
 import { ProgressbarDemoComponent } from './components/progressbar/progressbar-demo';
+import { RatingDemoComponent }      from './components/rating/rating-demo';
 import { SectionComponent }         from './components/section/section.component';
 
 @Component({
@@ -12,7 +13,8 @@ import { SectionComponent }         from './components/section/section.component
     ButtonsDemoComponent,
     SectionComponent,
     PaginationDemoComponent,
-    ProgressbarDemoComponent
+    ProgressbarDemoComponent,
+    RatingDemoComponent
   ],
   templateUrl: 'app/app.component.html'
 })
