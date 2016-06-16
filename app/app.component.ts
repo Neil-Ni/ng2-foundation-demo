@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component }                from '@angular/core';
+import { AccordionDemoComponent }   from './components/accordion/accordion-demo';
 import { AlertDemoComponent }       from './components/alert/alert-demo';
 import { ButtonsDemoComponent }     from './components/buttons/buttons-demo';
 import { PaginationDemoComponent }  from './components/pagination/pagination-demo';
@@ -10,6 +11,7 @@ import { SectionComponent }         from './components/section/section.component
 @Component({
   selector: 'my-app',
   directives: [
+    AccordionDemoComponent,
     AlertDemoComponent,
     ButtonsDemoComponent,
     PaginationDemoComponent,
