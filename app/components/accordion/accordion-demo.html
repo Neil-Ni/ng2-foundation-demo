@@ -25,14 +25,12 @@
   </accordion-group>
   <accordion-group heading="Dynamic Body Content">
     <p>The body of the accordion group grows to fit the contents</p>
-    <button type="button" class="btn btn-primary btn-sm" (click)="addItem()">Add Item</button>
+    <button class="button small" (click)="addItem()">Add Item</button>
     <div *ngFor="let item of items">{{item}}</div>
   </accordion-group>
   <accordion-group let group [isOpen]="status.open">
     <div accordion-heading>
       I can have markup, too!
-      <i class="pull-right glyphicon"
-         [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
     </div>
     This is just some content to illustrate fancy headings.
   </accordion-group>
