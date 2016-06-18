@@ -20,28 +20,11 @@
   <link rel="stylesheet" href="assets/rainbow.css"/>
   <link rel="stylesheet" href="assets/demo.css"/>
   <link rel="stylesheet" href="assets/demo.css"/>
+  <script src="app/systemjs.config.js"></script>
 
   <!-- 2. Configure SystemJS -->
   <script>
-    System.config({
-      packages: {
-        app: {
-          format: 'register',
-          defaultExtension: 'js'
-        }
-      },
-      map: {
-        moment: 'node_modules/moment/moment.js',
-        "@angular/core": "node_modules/@angular/core/core.umd.js",
-        "@angular/common": "node_modules/@angular/common/common.umd.js",
-        "@angular/compiler": "node_modules/@angular/compiler/compiler.umd.js",
-        "@angular/platform-browser": "node_modules/@angular/platform-browser/platform-browser.umd.js",
-        "@angular/platform-browser-dynamic": "node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js",
-        "@angular/platform-browser/src/animate/animation_builder": "node_modules/@angular/platform-browser/src/animate/animation_builder.js"
-      }
-    });
-    System.import('app/boot')
-      .then(null, console.error.bind(console));
+    System.import('app/boot').then(null, console.error.bind(console));
   </script>
 
   <script src="assets/rainbow.js"></script>
